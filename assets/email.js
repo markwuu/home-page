@@ -2,10 +2,11 @@ import React from "react"
 import styled from "styled-components"
 
 const SVG = styled.svg`
+  padding-right: 20px;
   flex: none;
   transition: fill 0.25s;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 `
 
 export const LinkedinIcon = () => (
