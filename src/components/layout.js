@@ -1,8 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-// import LinkedIn from "../../assets/linkedin.svg"
-import IconEmail from "../../assets/email"
+import { LinkedinIcon, GithubIcon, EmailIcon } from "../../assets/email"
 
 const Layout = styled.div`
   margin: 4rem auto;
@@ -40,9 +39,9 @@ export default ({ children }) => (
     </Header>
     {children}
     <Footer>
-      {/* hi */}
-      {/* <LinkedIn /> */}
-      <IconEmail />
+      <LinkedinIcon />
+      <GithubIcon />
+      <EmailIcon/>
     </Footer>
   </Layout>
 )
