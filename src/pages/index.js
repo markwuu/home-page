@@ -19,15 +19,13 @@ export default () => (
           JavaScript Web Engineer track.
         </a>{" "}
         Today, I can be found building applications with the latest
-        technologies. I am currently open to all opportunities. Feel free to
+        technologies.
+      </p>
+        <p>I am currently open to all opportunities. Feel free to
         take a look at some <Link to="/work">projects</Link> I've built. You can
-        check out the code on my{" "}
+        check out the code on{" "}
         <a href="https://github.com/markwuu">Github.</a>
-      </p>
-      <p>
-        Contact me at
-        <a href="mailto:markwuu@gmail.com"> MarkWuu@gmail.com</a>
-      </p>
+        </p>
     </Container>
   </Layout>
 )

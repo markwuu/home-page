@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import { LinkedinIcon, GithubIcon, EmailIcon } from "../../assets/email"
+import { LinkedinIcon, GithubIcon, EmailIcon } from "../../assets/icons"
 
 const Layout = styled.div`
   margin: 4rem auto;
