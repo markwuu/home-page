@@ -52,10 +52,8 @@ const SecondText = styled.div`
 
 export default () => (
   <Layout>
-    <h2>
-      Software Engineer
-      <KeyboardIcon />
-    </h2>
+    <KeyboardIcon />
+    <h2>Software Engineer</h2>
     <Container>
       <Image src={profile} />
       <FirstText>

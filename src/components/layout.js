@@ -1,12 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import { LinkedinIcon, GithubIcon, EmailIcon } from "../../assets/icons"
+import { LinkedinIcon, GithubIcon, EmailIcon, ApplicationIcon, ContactIcon, KeyboardIcon  } from "../../assets/icons"
 
 const Layout = styled.div`
   margin: 4rem auto;
   max-width: 850px;
-  /* padding: 0 1rem; */
+  padding: 0 1rem;
   font-family: "Domine", serif;
 `
 
@@ -32,9 +32,9 @@ export default ({ children }) => (
     <Header>
       <h1 style={{ display: `inline` }}>Mark Wuu</h1>
       <ul style={{ display: `inline`, listStyle: `none`, float: `right` }}>
-        <ListLink to="/">About</ListLink>
-        <ListLink to="/work/">Work</ListLink>
-        <ListLink to="/contact/">Contact</ListLink>
+        <ListLink to="/"><KeyboardIcon/></ListLink>
+        <ListLink to="/work/"><ApplicationIcon/></ListLink>
+        <ListLink to="/contact/"><ContactIcon/></ListLink>
       </ul>
     </Header>
     {children}
