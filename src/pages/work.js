@@ -4,8 +4,10 @@ import {ApplicationIcon} from "../../assets/icons"
 
 export default () => (
   <Layout>
+    <h2>
 <ApplicationIcon/>
-    <h2>Projects</h2>
+
+      Projects</h2>
     <p>
       <a href="http://www.ainafinda.com">Aina Finda</a>
     </p>

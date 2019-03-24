@@ -39,9 +39,10 @@ const Image = styled.img`
   z-index: 1;
   max-width: 33%;
   height: auto;
-  border: 5px solid #117dac;
+  border: 3px solid black;
   float: left;
   margin-right: 20px;
+  border-radius: 10px;
 `
 
 const SecondText = styled.div`
@@ -52,8 +53,10 @@ const SecondText = styled.div`
 
 export default () => (
   <Layout>
+    <h2>
+
     <KeyboardIcon />
-    <h2>Software Engineer</h2>
+      Software Engineer</h2>
     <Container>
       <Image src={profile} />
       <FirstText>

@@ -8,18 +8,11 @@ const SVG = styled.svg`
   transition: fill 0.35s;
   width: 30px;
   height: 30px;
+  vertical-align: text-bottom;
 
   &:hover {
     fill: #005073;
   }
-`
-
-const SVGa = styled.svg`
-  padding-right: 20px;
-  flex: none;
-  fill: #005073;
-  width: 30px;
-  height: 30px;
 `
 
 export const LinkedinIcon = () => (
