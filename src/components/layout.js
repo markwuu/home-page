@@ -6,7 +6,8 @@ import { LinkedinIcon, GithubIcon, EmailIcon } from "../../assets/icons"
 const Layout = styled.div`
   margin: 4rem auto;
   max-width: 850px;
-  padding: 0 1rem;
+  /* padding: 0 1rem; */
+  font-family: "Domine", serif;
 `
 
 const Header = styled.header`
@@ -17,7 +18,6 @@ const Footer = styled.div`
   position: fixed;
   bottom: 0;
   width: 60%;
-  background-color: white;
   height: 20%;
 `
 
@@ -41,7 +41,7 @@ export default ({ children }) => (
     <Footer>
       <LinkedinIcon />
       <GithubIcon />
-      <EmailIcon/>
+      <EmailIcon />
     </Footer>
   </Layout>
 )
