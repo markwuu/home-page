@@ -2,8 +2,6 @@ import React from "react"
 import Layout from "../components/layout"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import profile from "../../assets/profile.jpg"
-import { KeyboardIcon } from "../../assets/icons"
 
 const Container = styled.div`
   font-size: 18px;
@@ -30,36 +28,18 @@ const StyledSpan = styled.span`
   }
 `
 
-const FirstText = styled.div`
+const Paragraph = styled.div`
+  padding-top: 10px;
   margin-top: 50px;
   margin-bottom: 30px;
-  font-family: "Open Sans", sans-serif;
-`
-const Image = styled.img`
-  z-index: 1;
-  max-width: 33%;
-  height: auto;
-  border: 3px solid black;
-  float: left;
-  margin-right: 20px;
-  border-radius: 10px;
-`
-
-const SecondText = styled.div`
-  margin-top: 50px;
-  margin-bottom: 30px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
 `
 
 export default () => (
   <Layout>
-    <h2>
-
-    <KeyboardIcon />
-      Software Engineer</h2>
+    <h2>Software Engineer</h2>
     <Container>
-      <Image src={profile} />
-      <FirstText>
+      <Paragraph>
         Hello, my name is Mark and I'm a software engineer. In 2018, I graduated
         from DevLeague's{" "}
         <StyledLink href="https://www.devleague.com/javascript-web-engineer">
@@ -67,8 +47,8 @@ export default () => (
         </StyledLink>{" "}
         Today, I can be found building applications with the latest
         technologies.
-      </FirstText>
-      <SecondText>
+      </Paragraph>
+      <Paragraph>
         I am currently open to all opportunities. Feel free to take a look at
         some{" "}
         <Link to="/work">
@@ -76,7 +56,7 @@ export default () => (
         </Link>{" "}
         I've built. You can check out the code on{" "}
         <StyledLink href="https://github.com/markwuu">Github.</StyledLink>
-      </SecondText>
+      </Paragraph>
     </Container>
   </Layout>
 )

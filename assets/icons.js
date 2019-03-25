@@ -2,13 +2,10 @@ import React from "react"
 import styled from "styled-components"
 
 const SVG = styled.svg`
-  padding-right: 20px;
-  flex: none;
   fill: #117dac;
   transition: fill 0.35s;
   width: 30px;
   height: 30px;
-  vertical-align: text-bottom;
 
   &:hover {
     fill: #005073;
@@ -53,12 +50,18 @@ export const KeyboardIcon = () => (
 
 export const ApplicationIcon = () => (
   <SVG viewBox="0 0 14 16">
-  <path fillRule="evenodd" d="M5 3h1v1H5V3zM3 3h1v1H3V3zM1 3h1v1H1V3zm12 10H1V5h12v8zm0-9H7V3h6v1zm1-1c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V3z"/>
+    <path
+      fillRule="evenodd"
+      d="M5 3h1v1H5V3zM3 3h1v1H3V3zM1 3h1v1H1V3zm12 10H1V5h12v8zm0-9H7V3h6v1zm1-1c0-.55-.45-1-1-1H1c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1V3z"
+    />
   </SVG>
 )
 
 export const ContactIcon = () => (
   <SVG viewBox="0 0 16 16">
-  <path fillRule="evenodd" d="M15 1H6c-.55 0-1 .45-1 1v2H1c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h1v3l3-3h4c.55 0 1-.45 1-1V9h1l3 3V9h1c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zM9 11H4.5L3 12.5V11H1V5h4v3c0 .55.45 1 1 1h3v2zm6-3h-2v1.5L11.5 8H6V2h9v6z"/>
+    <path
+      fillRule="evenodd"
+      d="M15 1H6c-.55 0-1 .45-1 1v2H1c-.55 0-1 .45-1 1v6c0 .55.45 1 1 1h1v3l3-3h4c.55 0 1-.45 1-1V9h1l3 3V9h1c.55 0 1-.45 1-1V2c0-.55-.45-1-1-1zM9 11H4.5L3 12.5V11H1V5h4v3c0 .55.45 1 1 1h3v2zm6-3h-2v1.5L11.5 8H6V2h9v6z"
+    />
   </SVG>
 )

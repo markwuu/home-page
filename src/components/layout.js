@@ -1,24 +1,38 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import { LinkedinIcon, GithubIcon, EmailIcon, ApplicationIcon, ContactIcon, KeyboardIcon  } from "../../assets/icons"
+import { LinkedinIcon, GithubIcon, EmailIcon } from "../../assets/icons"
+// import { NameHeader } from "./UI/Name"
+import { Image } from "../components/UI/Picture"
+import profile from "../../assets/profile.jpg"
 
 const Layout = styled.div`
-  margin: 4rem auto;
   max-width: 850px;
-  padding: 0 1rem;
   font-family: "Domine", serif;
+  border: 2px solid black;
+  text-align: center;
+  background-color: #212b46;
+  color: #fdfdfb;
+  padding-top: 3.5%;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  margin: auto;
 `
 
-const Header = styled.header`
-  margin-bottom: 1.5rem;
+const Header = styled.div`
+  text-align: center;
 `
 
 const Footer = styled.div`
   position: fixed;
+  left: 50%;
   bottom: 0;
-  width: 60%;
-  height: 20%;
+  height: 7%;
 `
 
 const ListLink = props => (
@@ -29,14 +43,12 @@ const ListLink = props => (
 
 export default ({ children }) => (
   <Layout>
-    <Header>
-      <h1 style={{ display: `inline` }}>Mark Wuu</h1>
-      <ul style={{ display: `inline`, listStyle: `none`, float: `right` }}>
-        <ListLink to="/"><KeyboardIcon/></ListLink>
-        <ListLink to="/work/"><ApplicationIcon/></ListLink>
-        <ListLink to="/contact/"><ContactIcon/></ListLink>
-      </ul>
-    </Header>
+    <Image src={profile} />
+    <ul style={{ textAlign: `center` }}>
+      <ListLink to="/">About</ListLink>
+      <ListLink to="/work/">Work</ListLink>
+      <ListLink to="/contact/">Contact</ListLink>
+    </ul>
     {children}
     <Footer>
       <LinkedinIcon />
