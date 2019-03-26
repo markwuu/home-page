@@ -5,34 +5,35 @@ import styled from "styled-components"
 
 const Container = styled.div`
   font-size: 18px;
-  padding-inline-end: 10rem;
+  max-width: 390px;
+  margin: 0 auto;
 `
 
 const StyledLink = styled.a`
-  color: #117dac;
+  color: #709043;
   transition: 0.4s;
   text-decoration: none;
 
   &:hover {
-    color: #005073;
+    color: white;
   }
 `
 
 const StyledSpan = styled.span`
-  color: #117dac;
+  color: #709043;
   transition: 0.4s;
   text-decoration: none;
 
   &:hover {
-    color: #005073;
+    color: white;
   }
 `
 
 const Paragraph = styled.div`
-  padding-top: 10px;
-  margin-top: 50px;
-  margin-bottom: 30px;
+  padding-top: 8px;
+  padding-left: 10px;
   font-family: "Source Sans Pro", sans-serif;
+  text-align: left;
 `
 
 export default () => (
@@ -40,8 +41,9 @@ export default () => (
     <h2>Software Engineer</h2>
     <Container>
       <Paragraph>
-        Hello, my name is Mark and I'm a software engineer. In 2018, I graduated
-        from DevLeague's{" "}
+        <span style={{ fontSize: `40px`, fontFamily: `Domine` }}>H</span>ello,
+        my name is Mark and I'm a software engineer. In 2018, I graduated from
+        DevLeague's{" "}
         <StyledLink href="https://www.devleague.com/javascript-web-engineer">
           JavaScript Web Engineer track.
         </StyledLink>{" "}

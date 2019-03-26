@@ -2,13 +2,13 @@ import React from "react"
 import styled from "styled-components"
 
 const SVG = styled.svg`
-  fill: #117dac;
+  fill: #709043;
   transition: fill 0.35s;
   width: 30px;
   height: 30px;
 
   &:hover {
-    fill: #005073;
+    fill: white;
   }
 `
 

@@ -1,13 +1,6 @@
 import React from "react"
 import Layout from "../components/layout"
-import { ContactIcon } from "../../assets/icons"
-import styled from "styled-components"
-
-const Paragraph = styled.div`
-  margin-top: 50px;
-  margin-bottom: 30px;
-  font-family: "Source Sans Pro", sans-serif;
-`
+import { Paragraph } from "../components/UI/Paragraph"
 
 export default () => (
   <Layout>
