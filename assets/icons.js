@@ -6,6 +6,8 @@ const SVG = styled.svg`
   transition: fill 0.35s;
   width: 30px;
   height: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
 
   &:hover {
     fill: white;
