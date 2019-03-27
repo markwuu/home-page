@@ -19,12 +19,12 @@ export default ({ children }) => (
         </Link>
       </div>
       {children}
-    </Header>
 
-    <Footer>
-      <LinkedinIcon />
-      <GithubIcon />
-      <EmailIcon />
-    </Footer>
+      <Footer>
+        <LinkedinIcon />
+        <GithubIcon />
+        <EmailIcon />
+      </Footer>
+    </Header>
   </React.Fragment>
 )

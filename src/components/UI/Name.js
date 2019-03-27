@@ -5,7 +5,6 @@ export const Name = styled.div`
   text-align: center;
   transition: 0.4s;
   color: #709043;
-  /* font-family: "Source Sans Pro", sans-serif; */
 
   &:hover {
     color: white;
