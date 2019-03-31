@@ -15,6 +15,7 @@ export default ({ children }) => (
       <style>
         {`      body {
         position: relative;
+        margin: 0;
       }`}
       </style>
     </Helmet>

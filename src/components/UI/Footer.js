@@ -5,6 +5,6 @@ export const Footer = styled.div`
   left: 0;
   right: 0;
   bottom: 0;
-  height: 50px;
+  height: 38px;
   text-align: center;
 `
