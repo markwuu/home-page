@@ -4,27 +4,37 @@ import { LinkedinIcon, GithubIcon, EmailIcon } from "../../assets/icons"
 import { Image } from "../components/UI/Picture"
 import profile from "../../assets/profile.jpg"
 import { Footer } from "./UI/Footer"
-import { Header } from "./UI/Header"
+import { Body } from "./UI/Body"
 import { Name } from "./UI/Name"
+import { Container } from "./UI/Container"
+import { Helmet } from "react-helmet"
 
 export default ({ children }) => (
   <React.Fragment>
-    <Header>
-      <div style={{ textAlign: `center` }}>
+    <Helmet>
+      <style>
+        {`      body {
+        position: relative;
+      }`}
+      </style>
+    </Helmet>
+    <Body>
+      <Container>
         <Link to="/">
           <Image src={profile} />
         </Link>
         <Link style={{ textDecoration: `none` }} to="/">
           <Name>Mark Wuu</Name>
         </Link>
-      </div>
-      {children}
+      </Container>
 
-      <Footer>
-        <LinkedinIcon />
-        <GithubIcon />
-        <EmailIcon />
-      </Footer>
-    </Header>
+      {children}
+    </Body>
+
+    <Footer>
+      <LinkedinIcon />
+      <GithubIcon />
+      <EmailIcon />
+    </Footer>
   </React.Fragment>
 )

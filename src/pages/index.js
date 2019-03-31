@@ -3,16 +3,18 @@ import Layout from "../components/layout"
 import { Link } from "gatsby"
 import { Biography, BioContainer } from "../components/UI/Biography"
 import { StyledLink, StyledSpan } from "../components/UI/StyledLink"
-import { HomeTitle } from "../components/UI/HomeTitle"
+import { Title } from "../components/UI/Title"
 
 export default () => (
   <Layout>
-    <h2>Software Engineer</h2>
+    <Title>Software Engineer</Title>
     <BioContainer>
       <Biography>
-        <span style={{ fontSize: `40px`, fontFamily: `Domine` }}>H</span>ello,
-        my name is Mark and I'm a software engineer. In 2018, I graduated from
-        DevLeague's{" "}
+        <span style={{ fontSize: `40px`, fontFamily: `Georgia, serif` }}>
+          H
+        </span>
+        ello, my name is Mark and I'm a software engineer. In 2018, I graduated
+        from DevLeague's{" "}
         <StyledLink href="https://www.devleague.com/javascript-web-engineer">
           JavaScript Web Engineer track.
         </StyledLink>{" "}

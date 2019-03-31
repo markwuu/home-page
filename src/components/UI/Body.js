@@ -1,17 +1,16 @@
 import styled from "styled-components"
 
-export const Header = styled.div`
+export const Body = styled.div`
   max-width: 850px;
   font-family: "Domine", serif;
   background-color: #222222;
   color: white;
-  padding-top: 3.5%;
+  text-align: center;
 
-  position: absolute;
+  min-height: 100vh;
   top: 0;
-  bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
-  text-align: center;
+  padding-bottom: 100px;
 `
