@@ -22,6 +22,10 @@ export default () => (
             background-color: #01012a;
         }`}
       </style>
+      <link
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200"
+        rel="stylesheet"
+      />
     </Helmet>
     <Sidebar />
     <Body>

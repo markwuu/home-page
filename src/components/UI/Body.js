@@ -7,4 +7,5 @@ export const Body = styled.div`
   min-height: 90vh;
   margin: auto;
   padding-bottom: 80px;
+  font-family: "Source Sans Pro", sans-serif;
 `
