@@ -9,10 +9,12 @@ import { About } from "../components/UI/About"
 import { Button } from "../components/UI/Button"
 import { Panel } from "../components/UI/Panel"
 import { Container } from "../components/UI/Container"
-import { slide as Menu } from "react-burger-menu"
+import Sidebar from "../components/UI/Sidebar"
+import styled from "styled-components"
 
 export default () => (
   <React.Fragment>
+    <Sidebar />
     <Helmet>
       <style>
         {`body {
