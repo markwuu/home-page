@@ -14,7 +14,6 @@ import styled from "styled-components"
 
 export default () => (
   <React.Fragment>
-    <Sidebar />
     <Helmet>
       <style>
         {`body {
@@ -24,6 +23,7 @@ export default () => (
         }`}
       </style>
     </Helmet>
+    <Sidebar />
     <Body>
       <Panel>
         <Container>
@@ -37,7 +37,6 @@ export default () => (
         </Container>
         <Button>View Work</Button>
       </Panel>
-
       <Panel />
     </Body>
 
@@ -48,3 +47,40 @@ export default () => (
     </Footer>
   </React.Fragment>
 )
+
+// class ParentComponent extends React.Component {
+//   constructor(props) {
+//     super(props)
+//     this.state = {
+//       menuOpen: false,
+//     }
+//   }
+
+//   handleStateChange(state) {
+//     this.setState({ menuOpen: state.isOpen })
+//   }
+
+//   closeMenu() {
+//     this.setState({ menuOpen: false })
+//   }
+//   toggleMenu() {
+//     this.setState(state => ({ menuOpen: !state.menuOpen }))
+//   }
+
+//   render() {
+//     return (
+//       <div>
+//         <Menu
+//           isOpen={this.state.menuOpen}
+//           onStateChange={state => this.handleStateChange(state)}
+//         >
+//           <a onClick={() => this.closeMenu()}>Home</a>
+//           <a onClick={() => this.closeMenu()}>About</a>
+//           <a onClick={() => this.closeMenu()}>Contact</a>
+//           <a onClick={() => this.closeMenu()}>Settings</a>
+//         </Menu>
+//         <CustomIcon onClick={() => this.toggleMenu()} />
+//       </div>
+//     )
+//   }
+// }

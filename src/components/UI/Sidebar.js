@@ -2,6 +2,8 @@ import React from "react"
 import { slide as BurgerMenu } from "react-burger-menu"
 import styled from "styled-components"
 import { Link } from "gatsby"
+import ainafinda from "../../../assets/ainafinda.png"
+import bookfinder from "../../../assets/bookfinder.png"
 
 const StyledBurgerMenu = styled.div`
   .bm-burger-button {
@@ -44,7 +46,7 @@ const StyledBurgerMenu = styled.div`
   }
   .bm-item-list {
     color: #b8b7ad;
-    padding: 0.8em;
+    padding: 2.5em;
   }
   .bm-overlay {
     background: rgba(0, 0, 0, 0.3);
@@ -54,10 +56,8 @@ const StyledBurgerMenu = styled.div`
 export default () => (
   <StyledBurgerMenu>
     <BurgerMenu right disableAutoFocus width="40%">
-      <Link to="/">Testing</Link>
-      <Link to="/">Testing</Link>
-      <Link to="/">Testing</Link>
-      <Link to="/">Testing</Link>
+      <img src={ainafinda} />
+      <img src={bookfinder} />
     </BurgerMenu>
   </StyledBurgerMenu>
 )
