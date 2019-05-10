@@ -1,9 +1,8 @@
 import React from "react"
-import { slide as BurgerMenu } from "react-burger-menu"
+import Menu from "react-burger-menu/lib/menus/slide"
 import styled from "styled-components"
-import { Link } from "gatsby"
-import ainafinda from "../../../assets/ainafinda.png"
-import bookfinder from "../../../assets/bookfinder.png"
+import ainafinda from "../../assets/ainafinda.png"
+import bookfinder from "../../assets/bookfinder.png"
 
 const StyledBurgerMenu = styled.div`
   .bm-burger-button {
@@ -55,9 +54,26 @@ const StyledBurgerMenu = styled.div`
 
 export default () => (
   <StyledBurgerMenu>
-    <BurgerMenu right disableAutoFocus width="40%">
-      <img src={ainafinda} />
-      <img src={bookfinder} />
-    </BurgerMenu>
+    <Menu right disableAutoFocus width="40%">
+      <div>
+        <img src={ainafinda} />
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+        quod!
+      </div>
+      <div>
+        <img src={bookfinder} />
+      </div>
+      <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, magni?
+      </div>
+      <div>
+        <img src={bookfinder} />
+      </div>
+      <div>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, magni?
+      </div>
+    </Menu>
   </StyledBurgerMenu>
 )

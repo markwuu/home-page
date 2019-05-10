@@ -1,6 +1,8 @@
-import styled from "styled-components"
+import React from "react"
+import containerStyles from "./Container.module.css"
 
-export const Container = styled.div`
-  width: 500px;
-  margin-left: 150px;
-`
+export default ({children}) => (
+  <div className={containerStyles.container}>
+    {children}
+  </div>
+)

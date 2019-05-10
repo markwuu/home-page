@@ -1,11 +1,8 @@
-import styled from "styled-components"
+import React from "react"
+import BodyStyles from "./Body.module.css"
 
-export const Body = styled.div`
-  display: flex;
-  color: white;
-  text-align: center;
-  min-height: 90vh;
-  margin: auto;
-  padding-bottom: 80px;
-  font-family: "Source Sans Pro", sans-serif;
-`
+export default ({children}) => (
+  <div className={BodyStyles.bodyContainer}>
+   {children}
+  </div>
+)

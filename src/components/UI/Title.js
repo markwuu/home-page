@@ -1,8 +1,8 @@
-import styled from "styled-components"
+import React from "react"
+import titleStyles from "./Title.module.css"
 
-export const Title = styled.div`
-  /* border: 1px solid white; */
-  text-align: left;
-  font-size: 35px;
-  padding-bottom: 40px;
-`
+export default ({children}) => (
+  <div className={titleStyles.title}>
+  {children}
+  </div>
+)

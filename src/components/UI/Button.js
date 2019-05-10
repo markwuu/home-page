@@ -1,14 +1,8 @@
-import styled from "styled-components"
+import React from "react"
+import buttonStyles from "./Button.module.css"
 
-export const Button = styled.button`
-  margin-top: 75px;
-  margin-left: 150px;
-  border: 1px solid white;
-  width: 250px;
-  background-color: transparent;
-  color: white;
-  font-size: 16px;
-  padding: 12px;
-  border-radius: 2.5px;
-  cursor: pointer;
-`
+export default ({ children }) => (
+  <button className={buttonStyles.button}>
+  {children}
+  </button>
+)

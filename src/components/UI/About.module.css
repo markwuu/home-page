@@ -1,0 +1,12 @@
+.about {
+  border: 1px solid white;
+  text-align: left;
+  font-size: 25px;
+}
+
+/* media query example
+@media screen and (max-width: 900px){
+  .about{
+    border: 10px solid white;
+  }
+} */

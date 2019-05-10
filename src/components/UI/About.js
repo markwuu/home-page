@@ -1,7 +1,8 @@
-import styled from "styled-components"
+import React from "react"
+import aboutStyles from "./About.module.css"
 
-export const About = styled.div`
-  /* border: 1px solid white; */
-  text-align: left;
-  font-size: 25px;
-`
+export default ({children}) => (
+  <div className={aboutStyles.about}>
+  {children}
+  </div>
+)

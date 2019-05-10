@@ -1,8 +1,8 @@
-import styled from "styled-components"
+import React from "react"
+import nameStyles from "./Name.module.css"
 
-export const Name = styled.div`
-  /* border: 1px solid white; */
-  text-align: left;
-  font-size: 50px;
-  padding-top: 100px;
-`
+export default ({children}) => (
+  <div className={nameStyles.name}>
+  {children}
+  </div>
+)
