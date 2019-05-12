@@ -9,7 +9,6 @@ import About from "../components/UI/About"
 import Button from "../components/UI/Button"
 import Panel from "../components/UI/Panel"
 import Container from "../components/UI/Container"
-import Sidebar from "../components/Sidebar"
 import Menu from "react-burger-menu/lib/menus/slide"
 import ainafinda from "../../assets/ainafinda.png"
 import bookfinder from "../../assets/bookfinder.png"
@@ -32,10 +31,6 @@ export default class HomePage extends React.Component {
 
   toggleMenu() {
     this.setState(state => ({ menuOpen: true }))
-  }
-
-  testClick() {
-    console.log("im working!")
   }
 
   render() {
@@ -97,14 +92,11 @@ export default class HomePage extends React.Component {
             rel="stylesheet"
           />
         </Helmet>
-        {/* <Sidebar
-          isOpen={this.state.menuOpen}
-          onStateChange={state => this.handleStateChange(state)}
-        /> */}
         <Menu
           styles={styles}
           right
           width="40%"
+          disableAutoFocus
           isOpen={this.state.menuOpen}
           onStateChange={state => this.handleStateChange(state)}
         >
@@ -122,13 +114,6 @@ export default class HomePage extends React.Component {
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius,
             magni?
           </div>
-          <div>
-            <img src={bookfinder} alt="" />
-          </div>
-          <div>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius,
-            magni?
-          </div>
         </Menu>
         <Body>
           <Panel>
@@ -136,7 +121,7 @@ export default class HomePage extends React.Component {
               <Name>Mark Wuu</Name>
               <Title>Software Engineer</Title>
               <About>
-                Hi, my name is Mark Wuu and I create web applications for the
+                Hello, my name is Mark and I create web applications for the
                 internet. I'm currently open to all possibilities. Feel free to
                 browse through my work.
               </About>

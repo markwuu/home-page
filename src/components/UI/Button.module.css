@@ -9,4 +9,10 @@
   padding: 12px;
   border-radius: 2.5px;
   cursor: pointer;
+  transition: all 0.45s;
+}
+
+.button:hover {
+  color: #000000;
+  background-color: #FFFFFF;
 }
