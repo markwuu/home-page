@@ -9,6 +9,7 @@ import About from "../components/UI/About"
 import Button from "../components/UI/Button"
 import Panel from "../components/UI/Panel"
 import Container from "../components/UI/Container"
+import Project from "../components/UI/Project"
 import Menu from "react-burger-menu/lib/menus/slide"
 import ainafinda from "../../assets/ainafinda.png"
 import bookfinder from "../../assets/bookfinder.png"
@@ -23,10 +24,6 @@ export default class HomePage extends React.Component {
 
   handleStateChange(state) {
     this.setState({ menuOpen: state.isOpen })
-  }
-
-  closeMenu() {
-    this.setState({ menuOpen: false })
   }
 
   toggleMenu() {
@@ -100,20 +97,17 @@ export default class HomePage extends React.Component {
           isOpen={this.state.menuOpen}
           onStateChange={state => this.handleStateChange(state)}
         >
-          <div>
+          <Project>
             <img src={ainafinda} alt="" />
-          </div>
-          <div>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
             quod!
-          </div>
-          <div>
+          </Project>
+
+          <Project>
             <img src={bookfinder} alt="" />
-          </div>
-          <div>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius,
             magni?
-          </div>
+          </Project>
         </Menu>
         <Body>
           <Panel>
