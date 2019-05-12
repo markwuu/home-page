@@ -11,6 +11,8 @@ import Panel from "../components/UI/Panel"
 import Container from "../components/UI/Container"
 import Sidebar from "../components/Sidebar"
 import Menu from "react-burger-menu/lib/menus/slide"
+import ainafinda from "../../assets/ainafinda.png"
+import bookfinder from "../../assets/bookfinder.png"
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -63,10 +65,6 @@ export default class HomePage extends React.Component {
       bmCross: {
         background: "#bdc3c7",
       },
-      // bm-item:hover: {
-      //   display: 'inline-block'
-      // },
-
       bmMenuWrap: {
         position: "fixed",
         height: "100%",
@@ -110,9 +108,27 @@ export default class HomePage extends React.Component {
           isOpen={this.state.menuOpen}
           onStateChange={state => this.handleStateChange(state)}
         >
-          <a id="home" className="menu-item" href="/">
-            Home
-          </a>
+          <div>
+            <img src={ainafinda} alt="" />
+          </div>
+          <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
+            quod!
+          </div>
+          <div>
+            <img src={bookfinder} alt="" />
+          </div>
+          <div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius,
+            magni?
+          </div>
+          <div>
+            <img src={bookfinder} alt="" />
+          </div>
+          <div>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius,
+            magni?
+          </div>
         </Menu>
         <Body>
           <Panel>
@@ -125,9 +141,7 @@ export default class HomePage extends React.Component {
                 browse through my work.
               </About>
             </Container>
-            <Button onClick={() => this.toggleMenu()} h={5}>
-              View Work
-            </Button>
+            <Button onClick={() => this.toggleMenu()}>View Work</Button>
           </Panel>
           <Panel />
         </Body>
