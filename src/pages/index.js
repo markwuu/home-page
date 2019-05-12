@@ -10,43 +10,134 @@ import Button from "../components/UI/Button"
 import Panel from "../components/UI/Panel"
 import Container from "../components/UI/Container"
 import Sidebar from "../components/Sidebar"
+import Menu from "react-burger-menu/lib/menus/slide"
 
-export default () => (
-  <React.Fragment>
-    <Helmet>
-      <style>
-        {`body {
-            position: relative;
-            margin: 0;
-            background-color: #01012a;
-        }`}
-      </style>
-      <link
-        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200"
-        rel="stylesheet"
-      />
-    </Helmet>
-    <Sidebar />
-    <Body>
-      <Panel>
-        <Container>
-          <Name>Mark Wuu</Name>
-          <Title>Software Engineer</Title>
-          <About>
-            Hi, my name is Mark Wuu and I create web applications for the
-            internet. I'm currently open to all possibilities. Feel free to
-            browse through my work.
-          </About>
-        </Container>
-        <Button>View Work</Button>
-      </Panel>
-      <Panel />
-    </Body>
+export default class HomePage extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      menuOpen: false,
+    }
+  }
 
-    <Footer>
-      <LinkedinIcon />
-      <GithubIcon />
-      <EmailIcon />
-    </Footer>
-  </React.Fragment>
-)
+  handleStateChange(state) {
+    this.setState({ menuOpen: state.isOpen })
+  }
+
+  closeMenu() {
+    this.setState({ menuOpen: false })
+  }
+
+  toggleMenu() {
+    this.setState(state => ({ menuOpen: true }))
+  }
+
+  testClick() {
+    console.log("im working!")
+  }
+
+  render() {
+    var styles = {
+      bmBurgerButton: {
+        position: "fixed",
+        width: "36px",
+        height: "30px",
+        right: "36px",
+        top: "36px",
+      },
+      bmBurgerBars: {
+        background: "#373a47",
+      },
+      bmItem: {
+        textAlign: "center",
+        display: "inline-block",
+        textDecoration: "none",
+        marginBottom: "5vh",
+        color: "#d1d1d1",
+        transition: "color 0.2s",
+      },
+      bmCrossButton: {
+        height: "25px",
+        width: "25px",
+      },
+      bmCross: {
+        background: "#bdc3c7",
+      },
+      // bm-item:hover: {
+      //   display: 'inline-block'
+      // },
+
+      bmMenuWrap: {
+        position: "fixed",
+        height: "100%",
+      },
+      bmMenu: {
+        background: "#000016",
+        padding: "2.5em 1.5em 0",
+        fontSize: "1.85em",
+      },
+      bmItemList: {
+        color: "#b8b7ad",
+        padding: "2.5em",
+      },
+      bmOverlay: {
+        background: "rgba(0, 0, 0, 0.3)",
+      },
+    }
+    return (
+      <>
+        <Helmet>
+          <style>
+            {`body {
+              position: relative;
+              margin: 0;
+              background-color: #01012a;
+          }`}
+          </style>
+          <link
+            href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200"
+            rel="stylesheet"
+          />
+        </Helmet>
+        {/* <Sidebar
+          isOpen={this.state.menuOpen}
+          onStateChange={state => this.handleStateChange(state)}
+        /> */}
+        <Menu
+          styles={styles}
+          right
+          width="40%"
+          isOpen={this.state.menuOpen}
+          onStateChange={state => this.handleStateChange(state)}
+        >
+          <a id="home" className="menu-item" href="/">
+            Home
+          </a>
+        </Menu>
+        <Body>
+          <Panel>
+            <Container>
+              <Name>Mark Wuu</Name>
+              <Title>Software Engineer</Title>
+              <About>
+                Hi, my name is Mark Wuu and I create web applications for the
+                internet. I'm currently open to all possibilities. Feel free to
+                browse through my work.
+              </About>
+            </Container>
+            <Button onClick={() => this.toggleMenu()} h={5}>
+              View Work
+            </Button>
+          </Panel>
+          <Panel />
+        </Body>
+
+        <Footer>
+          <LinkedinIcon />
+          <GithubIcon />
+          <EmailIcon />
+        </Footer>
+      </>
+    )
+  }
+}

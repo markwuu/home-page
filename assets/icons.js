@@ -1,19 +1,5 @@
 import React from "react"
 import iconStyles from "./icons.module.css"
-// import styled from "styled-components"
-
-// const SVG = styled.svg`
-//   fill: white;
-//   transition: fill 0.35s;
-//   width: 30px;
-//   height: 30px;
-//   margin-left: 10px;
-//   margin-right: 10px;
-
-//   &:hover {
-//     fill: white;
-//   }
-// `
 
 export const LinkedinIcon = () => (
   <a href="https://www.linkedin.com/in/markwuu/">
