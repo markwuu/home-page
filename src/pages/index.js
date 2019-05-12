@@ -13,6 +13,7 @@ import Project from "../components/UI/Project"
 import Menu from "react-burger-menu/lib/menus/slide"
 import ainafinda from "../../assets/ainafinda.png"
 import bookfinder from "../../assets/bookfinder.png"
+import Picture from "../components/UI/Picture"
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -98,15 +99,23 @@ export default class HomePage extends React.Component {
           onStateChange={state => this.handleStateChange(state)}
         >
           <Project>
-            <img src={ainafinda} alt="" />
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores,
-            quod!
+            <a href="https://www.ainafinda.com">
+              <img src={ainafinda} />
+            </a>
+            A tourism application that educates the public on traditional
+            Hawaiian culture and language. Use the camera to learn some Hawaiian
+            words. Check out the code{" "}
+            <a href="https://github.com/jocelynsaysrawr/wailua">here</a>.
           </Project>
 
           <Project>
-            <img src={bookfinder} alt="" />
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius,
-            magni?
+            <a href="https://boiling-stream-52972.herokuapp.com/">
+              <img src={bookfinder} alt="" />
+            </a>
+            A book search application that utilizes the Google Books API to
+            redirect users to the google books store to preview and/or purchase
+            novels. Check out the code{" "}
+            <a href="https://github.com/markwuu/book-finder">here</a>.
           </Project>
         </Menu>
         <Body>
