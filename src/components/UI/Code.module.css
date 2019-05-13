@@ -1,0 +1,9 @@
+.code {
+  color: grey;
+  text-decoration: none;
+  font-style: italic;
+}
+
+.code:hover {
+  color: white;
+}

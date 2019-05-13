@@ -14,6 +14,7 @@ import Menu from "react-burger-menu/lib/menus/slide"
 import ainafinda from "../../assets/ainafinda.png"
 import bookfinder from "../../assets/bookfinder.png"
 import Picture from "../components/UI/Picture"
+import Code from "../components/UI/Code"
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -105,9 +106,8 @@ export default class HomePage extends React.Component {
             </a>
             <p>
               A tourism application that educates visitors on Hawaiian history
-              and language. Use the camera to learn some Hawaiian words. Check
-              out the code{" "}
-              <a href="https://github.com/jocelynsaysrawr/wailua">here</a>.
+              and language. Use the camera to learn some Hawaiian words.{" "}
+              <Code link="https://github.com/jocelynsaysrawr/wailua" />
             </p>
           </Project>
 
@@ -118,8 +118,8 @@ export default class HomePage extends React.Component {
             <p>
               A book search application that utilizes the Google Books API to
               redirect users to the Google Books store to preview and/or
-              purchase novels. Check out the code{" "}
-              <a href="https://github.com/markwuu/book-finder">here</a>.
+              purchase novels.{" "}
+              <Code link="https://github.com/markwuu/book-finder" />
             </p>
           </Project>
         </Menu>
