@@ -70,6 +70,7 @@ export default class HomePage extends React.Component {
       bmItemList: {
         color: "#b8b7ad",
         padding: "2.5em",
+        boxSizing: "border-box",
       },
       bmOverlay: {
         background: "rgba(0, 0, 0, 0.3)",
@@ -102,19 +103,24 @@ export default class HomePage extends React.Component {
             <a href="https://www.ainafinda.com">
               <img src={ainafinda} />
             </a>
-            A tourism application that educates visitors on Hawaiian history and
-            language. Use the camera to learn some Hawaiian words. Check out the
-            code <a href="https://github.com/jocelynsaysrawr/wailua">here</a>.
+            <p>
+              A tourism application that educates visitors on Hawaiian history
+              and language. Use the camera to learn some Hawaiian words. Check
+              out the code{" "}
+              <a href="https://github.com/jocelynsaysrawr/wailua">here</a>.
+            </p>
           </Project>
 
           <Project>
             <a href="https://boiling-stream-52972.herokuapp.com/">
               <img src={bookfinder} alt="" />
             </a>
-            A book search application that utilizes the Google Books API to
-            redirect users to the Google Books store to preview and/or purchase
-            novels. Check out the code{" "}
-            <a href="https://github.com/markwuu/book-finder">here</a>.
+            <p>
+              A book search application that utilizes the Google Books API to
+              redirect users to the Google Books store to preview and/or
+              purchase novels. Check out the code{" "}
+              <a href="https://github.com/markwuu/book-finder">here</a>.
+            </p>
           </Project>
         </Menu>
         <Body>
