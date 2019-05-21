@@ -10,15 +10,6 @@
   background: #373a47;
 }
 
-.bm-item {
-  text-align: center;
-  display: inline-block;
-  text-decoration: none;
-  margin-bottom: 5vh;
-  color: #d1d1d1;
-  transition: color 0.2s;
-}
-
 .bm-cross-button {
   height: 25px;
   width: 25px;
@@ -26,10 +17,6 @@
 
 .bm-cross {
   background: #bdc3c7;
-}
-
-.bm-item:hover {
-  display: inline-block;
 }
 
 .bm-menu-wrap {
@@ -46,8 +33,24 @@
 .bm-item-list {
   color: #b8b7ad;
   padding: 2.5em;
+  box-sizing: border-box;
+}
+
+.bm-item {
+  display: inline-block;
+  text-align: center;
+  text-decoration: "none";
+  margin-bottom: 5vh;
+  color: #d1d1d1;
+  transition: color 0.2s;
 }
 
 .bm-overlay {
   background: rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 700px) {
+  .bm-burger-button {
+    display: none;
+  }
 }

@@ -1,8 +1,8 @@
 import React from "react"
+import { Helmet } from "react-helmet"
 import { LinkedinIcon, GithubIcon, EmailIcon } from "../../assets/icons"
 import Footer from "../components/UI/Footer"
 import Body from "../components/UI/Body"
-import { Helmet } from "react-helmet"
 import Name from "../components/UI/Name"
 import Title from "../components/UI/Title"
 import About from "../components/UI/About"
@@ -10,11 +10,12 @@ import Button from "../components/UI/Button"
 import Panel from "../components/UI/Panel"
 import Container from "../components/UI/Container"
 import Project from "../components/UI/Project"
+import Code from "../components/UI/Code"
+import ProjectContainer from "../components/UI/ProjectContainer"
+import menuStyles from "../components/menuStyles.css"
 import Menu from "react-burger-menu/lib/menus/slide"
 import ainafinda from "../../assets/ainafinda.png"
 import bookfinder from "../../assets/bookfinder.png"
-import Picture from "../components/UI/Picture"
-import Code from "../components/UI/Code"
 
 export default class HomePage extends React.Component {
   constructor(props) {
@@ -33,50 +34,6 @@ export default class HomePage extends React.Component {
   }
 
   render() {
-    var styles = {
-      bmBurgerButton: {
-        position: "fixed",
-        width: "36px",
-        height: "30px",
-        right: "36px",
-        top: "36px",
-      },
-      bmBurgerBars: {
-        background: "#373a47",
-      },
-      bmItem: {
-        textAlign: "center",
-        display: "inline-block",
-        textDecoration: "none",
-        marginBottom: "5vh",
-        color: "#d1d1d1",
-        transition: "color 0.2s",
-      },
-      bmCrossButton: {
-        height: "25px",
-        width: "25px",
-      },
-      bmCross: {
-        background: "#bdc3c7",
-      },
-      bmMenuWrap: {
-        position: "fixed",
-        height: "100%",
-      },
-      bmMenu: {
-        background: "#000016",
-        padding: "2.5em 1.5em 0",
-        fontSize: "1.85em",
-      },
-      bmItemList: {
-        color: "#b8b7ad",
-        padding: "2.5em",
-        boxSizing: "border-box",
-      },
-      bmOverlay: {
-        background: "rgba(0, 0, 0, 0.3)",
-      },
-    }
     return (
       <>
         <Helmet>
@@ -93,9 +50,9 @@ export default class HomePage extends React.Component {
           />
         </Helmet>
         <Menu
-          styles={styles}
+          styles={menuStyles}
           right
-          width="40%"
+          width="700px"
           disableAutoFocus
           isOpen={this.state.menuOpen}
           onStateChange={state => this.handleStateChange(state)}
@@ -133,10 +90,35 @@ export default class HomePage extends React.Component {
                 internet. I'm currently open to all possibilities. Feel free to
                 browse through my work.
               </About>
+              <ProjectContainer>
+                <h1>Projects</h1>
+                <Project>
+                  <a href="https://www.ainafinda.com">
+                    <img src={ainafinda} />
+                  </a>
+                  <p>
+                    A tourism application that educates visitors on Hawaiian
+                    history and language. Use the camera to learn some Hawaiian
+                    words.{" "}
+                    <Code link="https://github.com/jocelynsaysrawr/wailua" />
+                  </p>
+                </Project>
+
+                <Project>
+                  <a href="https://boiling-stream-52972.herokuapp.com/">
+                    <img src={bookfinder} alt="" />
+                  </a>
+                  <p>
+                    A book search application that utilizes the Google Books API
+                    to redirect users to the Google Books store to preview
+                    and/or purchase novels.{" "}
+                    <Code link="https://github.com/markwuu/book-finder" />
+                  </p>
+                </Project>
+              </ProjectContainer>
             </Container>
             <Button onClick={() => this.toggleMenu()}>View Work</Button>
           </Panel>
-          <Panel />
         </Body>
 
         <Footer>
