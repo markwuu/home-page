@@ -52,7 +52,7 @@ export default class HomePage extends React.Component {
         <Menu
           styles={menuStyles}
           right
-          width="700px"
+          width="650px"
           disableAutoFocus
           isOpen={this.state.menuOpen}
           onStateChange={state => this.handleStateChange(state)}
