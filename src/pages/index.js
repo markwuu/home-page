@@ -86,8 +86,8 @@ export default class HomePage extends React.Component {
               <Name>Mark Wuu</Name>
               <Title>Software Engineer</Title>
               <About>
-                Hello, my name is Mark and I create web applications for the
-                internet. I'm currently open to all possibilities. Feel free to
+                Hi! I'm Mark and I create web based applications.
+                I'm currently open to all possibilities. Feel free to
                 browse through my work.
               </About>
               <ProjectContainer>
